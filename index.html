@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkout page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content">
+            <div class="page-title">Checkout</div>
+
+            <div class="cart">
+                <div class="cart-items-detail">
+                    <div class="cart-item cart-item1">
+                        <div class="item1-img cart-img">
+                            <img src="photo1.png" alt="Vintage backbag">
+                        </div>
+                        <div class="item1-right cart-right">
+                            <div class="item-name">Vintage backbag</div>
+                            <div class="item-price">$54.99 <span>$94.99</span></div>
+                            <div class="number-input">
+                                <div class="item-button">
+                                    <button onclick="decrementFirst()">-</button>
+                                    <input type="number" id="item1-quantity" value="1" min="1">
+                                    <button onclick="incrementFirst()">+</button>
+                                </div>
+                            </div>
+                        </div> <!-- end item 1 right side -->
+                    </div> <!-- end item 1 -->
+
+                    <div class="cart-item cart-item2">
+                        <div class="item1-img cart-img">
+                            <img src="photo2.png" alt="Levi shoes">
+                        </div>
+                        <div class="item2-right cart-right">
+                            <div class="item-name">Levi Shoes</div>
+                            <div class="item-price">$74.99 <span>$124.99</span></div>
+                            <div class="number-input">
+                                <div class="item-button">
+                                    <button onclick="decrementSecond()">-</button>
+                                    <input type="number" id="item2-quantity" value="1" min="1">
+                                    <button onclick="incrementSecond()">+</button>
+                                </div>
+                            </div>
+                        </div> <!-- end item 2 right side -->
+                    </div> <!-- end item 2 -->
+
+                </div> <!-- end top cart -->
+
+                <div class="cart-items-total">
+                    <div class="total shipping">
+                        <div class="total-name">Shipping</div>
+                        <div class="total-price">$19</div>
+                    </div>
+                    <div class="total tot">
+                        <div class="total-name">Total</div>
+                        <div class="total-price" id="total-all">$148.99</div>
+                    </div>
+                </div> <!-- end bottom cart -->
+            </div> <!-- end cart -->
+
+            <div class="form">
+                <div class="contact-form">
+
+                </div> <!-- end contact form -->
+
+                <div class="shipping-form">
+
+                </div> <!-- end shipping form -->
+
+                <!-- input type submit -->
+            </div>
+        </div> <!-- end content -->
+
+
+    </div> <!-- end container -->
+
+    <script src="script.js" defer async></script>
+</body>
+
+</html>
