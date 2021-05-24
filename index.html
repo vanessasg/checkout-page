@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -17,12 +19,13 @@
 <body>
 
     <div class="container">
-
         <div class="content">
+
             <div class="page-title">Checkout</div>
 
             <div class="cart">
                 <div class="cart-items-detail">
+
                     <div class="cart-item cart-item1">
                         <div class="item1-img cart-img">
                             <img src="photo1.png" alt="Vintage backbag">
@@ -72,17 +75,89 @@
             </div> <!-- end cart -->
 
             <div class="form">
-                <div class="contact-form">
+                <form action="" method="POST">
 
-                </div> <!-- end contact form -->
+                    <div class="contact-form">
+                        <div class="form-section-title">Contact information</div>
+                        <label for="email">E-mail</label>
+                        <div class="input-box">
+                            <span class="material-icons">email</span>
+                            <input type="email" name="email" placeholder="Enter your email..." required>
+                        </div>
+                        <label for="phone">Phone</label>
+                        <div class="input-box">
+                            <span class="material-icons">call</span>
+                            <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}"
+                                placeholder="Enter your phone..." required>
+                        </div>
+                    </div> <!-- end contact form -->
 
-                <div class="shipping-form">
+                    <div class="shipping-form">
+                        <div class="form-section-title">Shipping address</div>
+                        <label for="name">Full name</label>
+                        <div class="input-box">
+                            <span class="material-icons">account_circle</span>
+                            <input type="text" id="name" name="name" placeholder="Rodney Cotton" required>
+                        </div>
+                        <label for="address">Address</label>
+                        <div class="input-box">
+                            <span class="material-icons">home</span>
+                            <input type="text" id="address" name="address" placeholder="Your address.." required>
+                        </div>
+                        <label for="city">City</label>
+                        <div class="input-box">
+                            <span class="material-icons">apartment</span>
+                            <input type="text" id="city" name="city" placeholder="Your city.." required>
+                        </div>
 
-                </div> <!-- end shipping form -->
+                        <div class="flex-input-box">
+                            <div class="country-box">
+                                <label for="country">Your country</label>
+                                <div class="input-box">
+                                    <span class="material-icons">apartment</span>
+                                    <select id="country" name="country">
+                                        <option value="" disabled selected>Your country...</option>
+                                        <option value="italy">Italy</option>
+                                        <option value="jamaica">Jamaica</option>
+                                        <option value="japan">Japan</option>
+                                        <option value="jersey">Jersey</option>
+                                        <option value="jordan">Jordan</option>
+                                        <option value="kazakhstan">Kazakhstan</option>
+                                        <option value="kenya">Kenya</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                <!-- input type submit -->
+                            <div class="postal-code-box">
+                                <label for="postal-code">Postal-code</label>
+                                <div class="input-box">
+                                    <span class="material-icons">markunread_mailbox</span>
+                                    <input type="number" name="postal-code" placeholder="Your postal code..." required>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- end shipping form -->
+
+                    <div class="save-info-box">
+                        <input type="checkbox" name="save-info" id="save-info">
+                        <label for="save-info">Save this information for next time</label>
+                    </div>
+
+                    <div class="submit-button">
+                        <a href="https://vanessasg.github.io/checkout-page/">
+                            <input type="submit" value="Continue">
+                        </a>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="footer">
+                created by <a href="https://github.com/vanessasg">vanessasg</a>
             </div>
         </div> <!-- end content -->
+
 
 
     </div> <!-- end container -->
