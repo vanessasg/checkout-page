@@ -7,6 +7,7 @@ let shippingPrice = 19;
 bagQuantity = 1;
 shoesQuantity = 1;
 
+
 let decrementFirst = () => {
     if (bagQuantity > 1) {
         document.getElementById('item1-quantity').stepDown();

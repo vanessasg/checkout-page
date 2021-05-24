@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 .content {
-  max-width: 960px;
+  max-width: 1100px;
   min-width: 375px;
 }
 .page-title {
@@ -129,6 +129,16 @@ body {
   background: #f2f2f2;
   color: #333;
 }
+/* Hide arrows x Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Hide arrows x Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 /* bottom cart */
 
@@ -139,7 +149,7 @@ body {
 }
 .total {
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 2.6em;
 
   display: flex;
@@ -183,6 +193,9 @@ label {
   padding-right: 12px;
   font-size: 1.3em;
 }
+#name::placeholder {
+    color: #333;
+}
 input::placeholder {
   opacity: 1;
 }
@@ -192,6 +205,7 @@ input:focus::placeholder {
 input:focus,
 select:focus {
   outline: none;
+  color: #333;
 }
 input,
 select {
@@ -264,6 +278,43 @@ a {
 
 /* desktop */
 
-@media screen and (min-width:786px) {
-    
+@media screen and (min-width:900px) {
+    body {
+        font-size: 18px;
+    }
+    .content {
+        min-width: 970px;
+    }
+    .page-title {
+        font-size: 1.9em;
+        font-weight: 600;
+        margin-bottom: 55px;
+    }
+    .cart {
+        min-width: 385px;
+
+        float: right;
+    }  
+    .number-input input {
+        font-size: 1em;
+    }
+    .total,
+    .item-price{
+        font-size: 0.85em;
+        font-weight: 600;
+    }
+
+    .form {
+        max-width: 470px;
+    }
+    label {
+        font-size: 0.65em;
+        font-weight: 600;
+    }
+    .input-box {
+        margin-top: 7px;
+        margin-bottom: 15px;
+        padding: 20px;
+    }
+  
 }
