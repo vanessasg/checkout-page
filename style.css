@@ -278,7 +278,7 @@ a {
 
 /* desktop */
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:980px) {
     body {
         font-size: 18px;
     }
